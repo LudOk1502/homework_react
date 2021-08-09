@@ -1,0 +1,17 @@
+.simpson {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    width: 180px;
+}
+
+p {
+    margin: 10px;
+}
