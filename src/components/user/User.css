@@ -1,0 +1,20 @@
+button {
+    width: 10%;
+    height: 30px;
+    margin: 10px 0;
+    background-color: bisque;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
