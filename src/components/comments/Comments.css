@@ -1,0 +1,16 @@
+.wrap {
+    display: flex;
+}
+
+.wrap > div {
+    width: 50%;
+}
+
+.details {
+    height: 200px;
+    padding: 10px;
+    background-color: bisque;
+    margin: 15px 0;
+    position: fixed;
+
+}
