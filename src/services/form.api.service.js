@@ -31,10 +31,10 @@ const updateCarAPI = (car) => {
 const getCars = () => {
     return fetch(url)
         .then(value => value.json())
-}
+};
 
 const getChosenCar = (id) => {
     return fetch(url + '/' + id)
         .then((value) => value.json())
-}
+};
 export {saveCar, deleteCarAPI, updateCarAPI, getChosenCar, getCars};
