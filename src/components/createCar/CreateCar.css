@@ -1,0 +1,10 @@
+.wrap_new_car {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn_save {
+    width: 80px;
+    background-color: #ff7b68;
+    font-size: 15px;
+}

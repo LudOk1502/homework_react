@@ -1,0 +1,20 @@
+.wrap_update_car {
+    display: flex;
+    column-gap: 100px;
+    justify-content: center;
+}
+
+input, select {
+    margin-top: 10px;
+}
+
+.btn_ok {
+    margin-left: 10px;
+    width: 50px;
+}
+
+.btn_update {
+    width: 80px;
+    background-color: #ff7b68;
+    font-size: 15px;
+}
