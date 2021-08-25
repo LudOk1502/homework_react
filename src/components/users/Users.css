@@ -1,0 +1,18 @@
+.wrap_users {
+    padding-top: 20px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.btn_user_details {
+    background-color: darksalmon;
+    margin-left: 20px;
+}
+
+.user {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+

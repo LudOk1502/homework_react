@@ -1,0 +1,12 @@
+.wrap_posts {
+    padding-top: 20px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.post_info {
+    width: 50%;
+    border-left: chocolate 2px solid;
+    height: 200px;
+    padding: 10px;
+}
