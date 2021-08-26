@@ -1,13 +1,13 @@
-const url = 'http://195.72.146.25/api/v1/cars';
+const url = 'http://91.201.233.14/api/v1/cars';
 
 const saveCar = (car) => {
-    fetch(url, {
+    return fetch(url, {
         method: 'POST',
         body: JSON.stringify(car),
         headers: {
             'content-type': 'application/json; charset=UTF-8',
         }
-    }).then(response => response.json()).then((json) => console.log(json));
+    }).then(response => response.json());
 };
 
 const deleteCarAPI = (id) => {
@@ -16,8 +16,8 @@ const deleteCarAPI = (id) => {
     });
 };
 
-const updateCarAPI = (car) => {
-    fetch(url + '/' + car.id, {
+const updateCarAPI = (id, car) => {
+    return fetch(url + '/' + id, {
         method: 'PUT',
         body: JSON.stringify(car),
         headers: {
@@ -25,7 +25,6 @@ const updateCarAPI = (car) => {
         },
     })
         .then((response) => response.json())
-        .then((json) => console.log(json))
 };
 
 const getCars = () => {
@@ -33,8 +32,4 @@ const getCars = () => {
         .then(value => value.json())
 };
 
-const getChosenCar = (id) => {
-    return fetch(url + '/' + id)
-        .then((value) => value.json())
-};
-export {saveCar, deleteCarAPI, updateCarAPI, getChosenCar, getCars};
+export {saveCar, deleteCarAPI, updateCarAPI, getCars};

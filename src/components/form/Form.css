@@ -1,9 +1,21 @@
-button {
+.btn_save {
     width: 10%;
     height: 25px;
+    font-size: 15px;
+    background-color: azure;
+    border: teal 2px solid;
+}
+.btn_delete, .btn_edit {
+    width: 7%;
+    height: 20px;
+    margin-left: 18px;
+    font-size: 15px;
+    background-color: teal;
+    color: white;
 }
 
-input {
-    width: 400px;
-    height: 20px;
+form {
+    text-align: center;
+    background-color: azure;
+    padding-bottom: 10px;
 }
