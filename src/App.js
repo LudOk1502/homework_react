@@ -1,20 +1,22 @@
 import {useReducer} from "react";
 
 const reducer = (state, action) => {
-    if (action.obj === '1' && action.diya === '+') {
-        return {...state, a: state.a++}
-    } else if (action.obj === '1' && action.diya === '-') {
-        return {...state, a: state.a--}
-    } else if (action.obj === '2' && action.diya === '+') {
-        return {...state, b: state.b++}
-    } else if (action.obj === '2' && action.diya === '-') {
-        return {...state, b: state.b--}
-    } else if (action.obj === '3' && action.diya === '+') {
-        return {...state, c: state.c++}
-    } else if (action.obj === '3' && action.diya === '-') {
-        return {...state, c: state.c--}
+    switch (action.type) {
+        case "INC_A":
+            return {...state, a: state.a + 1};
+        case "DEC_A":
+            return {...state, a: state.a - 1};
+        case "INC_B":
+            return {...state, b: state.b + 1};
+        case "DEC_B":
+            return {...state, b: state.b - 1};
+        case "INC_C":
+            return {...state, c: state.c + 1};
+        case "DEC_C":
+            return {...state, c: state.c - 1};
+        default:
+            return {...state};
     }
-    return {...state};
 }
 
 function App() {
@@ -22,14 +24,14 @@ function App() {
     return (
         <div className="App">
             <h1>state1 - {a}</h1>
-            <button onClick={() => dispatch({obj: '1', diya: '+'})}>inc</button>
-            <button onClick={() => dispatch({obj: '1', diya: '-'})}>dec</button>
+            <button onClick={() => dispatch({type: "INC_A"})}>inc</button>
+            <button onClick={() => dispatch({type: "DEC_A"})}>dec</button>
             <h1>state2 - {b}</h1>
-            <button onClick={() => dispatch({obj: '2', diya: '+'})}>inc</button>
-            <button onClick={() => dispatch({obj: '2', diya: '-'})}>dec</button>
+            <button onClick={() => dispatch({type: "INC_B"})}>inc</button>
+            <button onClick={() => dispatch({type: "DEC_B"})}>dec</button>
             <h1>state3 - {c}</h1>
-            <button onClick={() => dispatch({obj: '3', diya: '+'})}>inc</button>
-            <button onClick={() => dispatch({obj: '3', diya: '-'})}>dec</button>
+            <button onClick={() => dispatch({type: "INC_C"})}>inc</button>
+            <button onClick={() => dispatch({type: "DEC_C"})}>dec</button>
         </div>
     );
 }
