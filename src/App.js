@@ -20,7 +20,7 @@ const reducer = (state, action) => {
 }
 
 function App() {
-    let [{a, b, c}, dispatch] = useReducer(reducer, {a: 0, b: 0, c: 0})
+    let [{a, b, c}, dispatch] = useReducer(reducer, {a: 0, b: 0, c: 0});
     return (
         <div className="App">
             <h1>state1 - {a}</h1>
