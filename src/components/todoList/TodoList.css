@@ -1,0 +1,26 @@
+body {
+    padding: 20px;
+}
+
+.todo_item {
+    width: 50%;
+    min-height: 120px;
+    background-color: bisque;
+    margin: 10px 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.btn_todoItem {
+    column-gap: 20px;
+    display: flex;
+}
+
+.btn_todoItem > button {
+    width: 60px;
+    background-color: coral;
+    color: white;
+    font-size: 12px;
+}
